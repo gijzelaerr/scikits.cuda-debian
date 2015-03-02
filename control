@@ -1,0 +1,21 @@
+Source: scikits.cuda
+Section: python
+Priority: optional
+Maintainer: Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0), python-setuptools, python-all
+Standards-Version: 3.9.4
+Homepage: http://scikit-cuda.readthedocs.org/
+X-Python-Version: 2.7
+
+Package: python-scikits.cuda
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-pycuda,
+ python-numpy
+Description: Python interface to GPU-powered libraries
+ The CUDA SciKit provides Python interfaces to a subset of the functions in the
+ CUDA, CUDART, CUBLAS, and CUFFT libraries distributed as part of NVIDIA's CUDA
+ Programming Toolkit, as well as interfaces to select functions in the free and
+ standard versions of the CULA Dense Toolkit. In contrast to most existing
+ Python wrappers for these libraries (many of which only provide a low-level
+ interface to the actual library functions), this package uses PyCUDA to
+ provide high-level functions comparable to those in the NumPy package.
